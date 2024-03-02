@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import styles from "./page.module.css";
 
-const WEATHER_API_KEY = "24c7fba88f9b1b60fd13627f727cdb34";
+const WEATHER_API_KEY = process.env.NEXT_PUBLIC_WEATHER_KEY;
 
 export default function Home() {
   const [weatherData, setWeatherData] = useState<any>();
